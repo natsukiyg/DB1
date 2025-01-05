@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>メンバー登録フォーム(DB ver1.0)</title>
-    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="./css/input.css">
 </head>
 <body>
     <h1>メンバー登録フォーム</h1>

@@ -16,7 +16,7 @@ $expectations = isset($_GET["expectations"]) ? $_GET["expectations"] : '';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登録完了</title>
-    <link rel="stylesheet" href="confirmation.css">
+    <link rel="stylesheet" href="./css/confirmation.css">
     <style>
         /* 自動遷移メッセージのスタイル */
         #redirect-message {

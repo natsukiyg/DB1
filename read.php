@@ -53,7 +53,7 @@ foreach ($result as $record) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>メンバー登録データ</title>
-    <link rel="stylesheet" href="read.css">
+    <link rel="stylesheet" href="./css/read.css">
 </head>
 
 <body>
@@ -64,7 +64,7 @@ foreach ($result as $record) {
     </div>
     <!-- 入力画面へのリンク -->
     <a href="input.php">入力画面へ戻る</a>
-    
+
     <table>
         <thead>
             <tr>
