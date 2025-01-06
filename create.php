@@ -22,17 +22,19 @@ $whereDidYouHear = $_POST["whereDidYouHear"];
 $expectations = $_POST["expectations"];
 
 // DB接続
-$dbn ='mysql:dbname=db1;charset=utf8mb4;port=3306;host=localhost'; //phpMyAdminのホスト名
-$user = 'root';
-$pwd = '';
+//$dbn ='mysql:dbname=db1;charset=utf8mb4;port=3306;host=localhost'; //phpMyAdminのホスト名
+//$user = 'root';
+//$pwd = '';
 
-try {
-  $pdo = new PDO($dbn, $user, $pwd);
-} catch (PDOException $e) {
-  echo json_encode(["db error" => "{$e->getMessage()}"]);
-  exit();
-} // 「dbError:...」が表示されたらdb接続でエラーが発生していることがわかる．
+//try {
+//  $pdo = new PDO($dbn, $user, $pwd);
+//} catch (PDOException $e) {
+//  echo json_encode(["db error" => "{$e->getMessage()}"]);
+//  exit();
+//} // 「dbError:...」が表示されたらdb接続でエラーが発生していることがわかる．
 
+// db_config.phpからデータベース接続情報を持ってくる
+include("db_config.php"); // db_config.phpの中身を読み込むので、$dbnや$pdoが使えるようになる
 
 // SQL作成&実行
 $sql = 'INSERT INTO db1_table (memberId, name, gender, birthday, email, address, facility, whereDidYouHear, expectations, registered_at) VALUES (NULL, :name, :gender, :birthday, :email, :address, :facility, :whereDidYouHear, :expectations, now())';

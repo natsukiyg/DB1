@@ -56,7 +56,7 @@ $expectations = isset($_GET["expectations"]) ? $_GET["expectations"] : '';
         <button class="action-btn"><span>登録データリストを見る</span></button>
     </a>
     <!-- 「入力画面に戻る」ボタン -->
-    <a href="input.php">
+    <a href="index.php">
         <button class="action-btn"><span>入力画面に戻る</span></button>
     </a>
 

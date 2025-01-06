@@ -1,16 +1,19 @@
 <?php
 
 // DB接続
-$dbn ='mysql:dbname=db1;charset=utf8mb4;port=3306;host=localhost';
-$user = 'root';
-$pwd = '';
+//$dbn ='mysql:dbname=db1;charset=utf8mb4;port=3306;host=localhost';
+//$user = 'root';
+//$pwd = '';
 
-try {
-  $pdo = new PDO($dbn, $user, $pwd);
-} catch (PDOException $e) {
-  echo json_encode(["db error" => "{$e->getMessage()}"]);
-  exit();
-}
+//try {
+//  $pdo = new PDO($dbn, $user, $pwd);
+//} catch (PDOException $e) {
+//  echo json_encode(["db error" => "{$e->getMessage()}"]);
+//  exit();
+//}
+
+// db_config.phpからデータベース接続情報を持ってくる
+include("db_config.php"); // db_config.phpの中身を読み込むので、$dbnや$pdoが使えるようになる
 
 // SQL作成
 $sql = 'SELECT * FROM db1_table'; //ユーザーが送ってくる変数はないのでバインド変数不要

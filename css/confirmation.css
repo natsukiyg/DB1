@@ -67,23 +67,6 @@ table td:first-child {
     font-weight: bold; /*最初の列を太字に*/
 }
 
-/* ボタン */
-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 15px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 100%;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
 /* メッセージ */
 #response {
     text-align: center;
@@ -116,6 +99,9 @@ button.action-btn {
     margin-top: 20px;
     transition: background-color 0.3s, transform 0.2s ease-in-out;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 少しシャドウを追加 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ボタンのホバー効果 */
